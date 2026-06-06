@@ -632,6 +632,72 @@ body {
     50% { opacity: 0.1; }
 }
 
+/* ==================== WEDDING DETAILS SECTION ==================== */
+#wedding-details {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, transparent, rgba(201, 83, 122, 0.03), transparent);
+}
+
+.wedding-info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 40px auto 0;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 25px 30px;
+    text-align: right;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-gold);
+    border-color: rgba(212, 175, 55, 0.4);
+}
+
+.info-card-icon {
+    font-size: 40px;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(212, 175, 55, 0.08);
+    border-radius: 50%;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.info-card-content {
+    flex: 1;
+}
+
+.info-card-title {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    color: var(--gold);
+    margin-bottom: 6px;
+}
+
+.info-card-text {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
 /* ==================== MAZE SECTION ==================== */
 #maze {
     text-align: center;

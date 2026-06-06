@@ -231,7 +231,7 @@ function initParticles() {
    COUNTDOWN TIMER
    ================================================================ */
 function initCountdown() {
-    const weddingDate = new Date('2026-06-11T19:00:00+03:00');
+    const weddingDate = new Date('2026-06-11T17:00:00+03:00');
     const daysEl = document.getElementById('count-days');
     const hoursEl = document.getElementById('count-hours');
     const minutesEl = document.getElementById('count-minutes');
