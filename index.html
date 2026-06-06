@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>دعوة فرح - تقوي & محمد 💍</title>
+    <meta name="description" content="دعوة حفل زفاف تقوي ومحمد - ١١ يونيو ٢٠٢٦ - في انتظاركم لمشاركتنا أجمل ليالي العمر">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== ENVELOPE OVERLAY ========== -->
+    <div id="envelope-overlay">
+        <canvas id="envelope-sparkles"></canvas>
+        <div id="envelope-container">
+            <div id="envelope">
+                <div class="envelope-back"></div>
+                <div class="envelope-front-bottom"></div>
+                <div class="envelope-left"></div>
+                <div class="envelope-right"></div>
+                <div class="envelope-flap"></div>
+                <div class="wax-seal" id="wax-seal">
+                    <div class="seal-ornament"></div>
+                    <div class="seal-text">
+                        <span class="seal-name">تقوي</span>
+                        <span class="seal-amp">&</span>
+                        <span class="seal-name">محمد</span>
+                    </div>
+                </div>
+            </div>
+            <p class="envelope-hint" id="envelope-hint">اضغط على الظرف لفتح الدعوة ✉️</p>
+        </div>
+    </div>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="main-content" class="hidden">
+        <canvas id="bg-canvas"></canvas>
+
+        <!-- Hero Section -->
+        <section id="hero" class="section">
+            <div class="hero-overlay"></div>
+            <div class="hero-inner">
+                <p class="bismillah" data-aos>بسم الله الرحمن الرحيم</p>
+                <p class="quran-verse" data-aos>﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنْفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ﴾</p>
+                <div class="ornament-line" data-aos>✦ ✦ ✦</div>
+                <p class="invite-line" data-aos>يتشرفان بدعوتكم لحضور حفل زفاف</p>
+                <div class="couple-names" data-aos>
+                    <h1 class="name bride-name">تقوي</h1>
+                    <span class="heart-divider">
+                        <span class="heart-icon">❤</span>
+                    </span>
+                    <h1 class="name groom-name">محمد</h1>
+                </div>
+                <div class="ornament-line" data-aos>❧ ❧ ❧</div>
+                <p class="wedding-desc" data-aos>بقلوب ملؤها الحب والسعادة، ندعوكم لمشاركتنا أجمل ليالي العمر</p>
+                <div class="details-grid" data-aos>
+                    <div class="detail-card" id="detail-date">
+                        <div class="detail-icon">📅</div>
+                        <div class="detail-label">التاريخ</div>
+                        <div class="detail-value">١١ يونيو ٢٠٢٦</div>
+                    </div>
+                    <div class="detail-card" id="detail-time">
+                        <div class="detail-icon">🕖</div>
+                        <div class="detail-label">الموعد</div>
+                        <div class="detail-value">الساعة السابعة مساءً</div>
+                    </div>
+                    <div class="detail-card" id="detail-location">
+                        <div class="detail-icon">📍</div>
+                        <div class="detail-label">المكان</div>
+                        <div class="detail-value">القاهرة، مصر</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section id="countdown" class="section">
+            <h2 class="section-title" data-aos>⏳ العد التنازلي</h2>
+            <p class="section-subtitle" data-aos>الوقت المتبقي لأجمل ليلة في العمر</p>
+            <div class="countdown-grid" data-aos>
+                <div class="count-card">
+                    <div class="count-number" id="count-days">00</div>
+                    <div class="count-label">يوم</div>
+                </div>
+                <div class="count-sep">:</div>
+                <div class="count-card">
+                    <div class="count-number" id="count-hours">00</div>
+                    <div class="count-label">ساعة</div>
+                </div>
+                <div class="count-sep">:</div>
+                <div class="count-card">
+                    <div class="count-number" id="count-minutes">00</div>
+                    <div class="count-label">دقيقة</div>
+                </div>
+                <div class="count-sep">:</div>
+                <div class="count-card">
+                    <div class="count-number" id="count-seconds">00</div>
+                    <div class="count-label">ثانية</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maze Game Section -->
+        <section id="maze" class="section">
+            <h2 class="section-title" data-aos>🎮 وصّل العريس بالعروسة!</h2>
+            <p class="section-subtitle" data-aos>امسك العريس 🤵 وحركه عبر المتاهة حتى يصل للعروسة 👰</p>
+            <div class="maze-wrapper" data-aos>
+                <canvas id="maze-canvas"></canvas>
+            </div>
+            <div class="maze-controls" data-aos>
+                <button id="maze-reset" class="btn-gold">🔄 متاهة جديدة</button>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-ornament">✦ ✦ ✦</div>
+            <p class="footer-text">في انتظاركم بإذن الله 🤍</p>
+            <p class="footer-names">تقوي & محمد</p>
+        </footer>
+    </main>
+
+    <!-- Background Music -->
+    <audio id="bg-music" preload="auto" loop>
+        <source src="sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
